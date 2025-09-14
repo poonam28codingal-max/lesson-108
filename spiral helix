@@ -1,0 +1,25 @@
+import turtle
+import math
+
+# Set up the screen
+screen = turtle.Screen()
+screen.bgcolor("black")
+screen.title("Spiral Helix")
+
+# Create a turtle
+t = turtle.Turtle()
+t.speed(0)  # fastest speed
+t.pensize(2)
+t.color("cyan")
+
+# Spiral helix parameters
+angle = 30    # turning angle
+distance = 5  # initial step size
+
+for i in range(100):
+    t.forward(distance)
+    t.right(angle)
+    distance += 2  # gradually increase distance to create helix effect
+
+# Finish
+turtle.done()
